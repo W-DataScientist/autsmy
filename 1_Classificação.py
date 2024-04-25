@@ -1,5 +1,8 @@
 import streamlit as st
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use("agg")
+
 
 def classify_tea(sex, age, communication, social_interaction, behavior, sensory_sensitivity, specific_interests, developmental_delays, nonverbal_communication,
                  routine_preference, understanding_nonliteral, repetitive_motor_movements, sensory_issues, intense_focus, lack_of_eye_contact, emotion_comprehension,
