@@ -1,8 +1,4 @@
 import streamlit as st
-import matplotlib.pyplot as plt
-import matplotlib
-matplotlib.use("agg")
-
 
 def classify_tea(sex, age, communication, social_interaction, behavior, sensory_sensitivity, specific_interests, developmental_delays, nonverbal_communication,
                  routine_preference, understanding_nonliteral, repetitive_motor_movements, sensory_issues, intense_focus, lack_of_eye_contact, emotion_comprehension,
@@ -120,16 +116,6 @@ def main():
                               difficulty_with_changes, unusual_interests, hyper_or_hypoactivity, sensory_overload, self_injurious_behaviors,
                               emotion_recognition_difficulty, sleep_issues, exceptional_memory, tone_of_voice_difficulty)
         st.write(f"A classificação do TEA é: {result}")
-
-        # Criar gráfico de barras
-        grades = ["Grau Baixo", "Grau Moderado", "Grau Alto"]
-        counts = [result.count(grade) for grade in grades]
-        
-        fig, ax = plt.subplots()
-        ax.bar(grades, counts, color=['green', 'orange', 'red'])
-        ax.set_ylabel('Pontuação')
-        ax.set_title('Classificação de TEA')
-        st.pyplot(fig)
 
 if __name__ == "__main__":
     main()
