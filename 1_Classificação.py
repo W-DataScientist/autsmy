@@ -43,7 +43,7 @@ def classify_tea(sex, age, communication, social_interaction, behavior, sensory_
                 return "Grau Alto"
 
 def main():
-    st.title("Classificação do Transtorno do Espectro Autista (TEA)")
+    st.title("Classificação (TEA)")
 
     # Parâmetros
     sex = st.radio("Você é do sexo masculino?", ("Sim", "Não"))
