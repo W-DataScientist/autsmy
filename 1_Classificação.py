@@ -46,8 +46,8 @@ def main():
     st.title("Classificação (TEA)")
 
     # Parâmetros
-    sex = st.radio("Você é do sexo masculino?", ("Sim", "Não"))
-    age = st.radio("Tem menos de 30 anos?", ("Sim", "Não"))
+    sex = st.radio("Qual o sexo do paciente?", ("Masculino", "Feminino"))
+    age = st.slider("Qual a idade do paciente?", 1, 40)
     communication = st.radio("Tem dificuldades na comunicação?", ("Sim", "Não"))
     social_interaction = st.radio("Tem dificuldades na interação social?", ("Sim", "Não"))
     behavior = st.radio("Exibe padrões repetitivos de comportamento?", ("Sim", "Não"))
